@@ -7,14 +7,6 @@
     --theme-color-burger: rgb(64, 64, 64);
 }
 
-/* html {
-    background: var(--theme-color-back);
-}
-
-body {
-    background: var(--theme-color-back);
-} */
-
 .main-container {
     height: 95vh;
     left: 0;
@@ -51,7 +43,7 @@ canvas {
 }
 
 /*Modal stuff */
-.btn{
+.btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,9 +53,9 @@ canvas {
     color: white;
     padding: 10px 30px;
     cursor: pointer;
-  }
-  
-  #game-over{
+}
+
+#game-over {
     width: 30vh;
     overflow: hidden;
     background: lightgray;
@@ -77,20 +69,20 @@ canvas {
     padding: 10px;
     text-align: center;
     display: none;
-  }
-  
-  #game-over span{
+}
+
+#game-over span {
     color: lightgrey;
     font-size: 2em;
     display: block;
     margin: 20px 0;
-  }
-  
-  #game-over h1{
-    color: rgb(0, 0, 0)
-  }
+}
 
-  .close{
+#game-over h1 {
+    color: rgb(0, 0, 0);
+}
+
+.close {
     font-size: 1em;
     color: black;
     border-radius: 5px;
@@ -99,4 +91,4 @@ canvas {
     background: lightgray;
     display: inline-block;
     border-radius: 3px solid #000;
-  }
+}

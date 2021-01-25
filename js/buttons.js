@@ -1,31 +1,27 @@
 let direction;
-let run;
 
 const scoreDisplay = document.getElementById("score");
 const highScore = document.getElementById("high-score");
 
-document.onkeydown = function (e){
-    if (e.key ==  " "){
-        direction = 'STOP';
+document.onkeydown = function (e) {
+    e.preventDefault();
+    if (e.key == " ") {
+        direction = "STOP";
     }
 
-    if (e.key == 'ArrowUp'){
-        run = 'running';
-        direction = 'UP';
+    if (e.key == "ArrowUp") {
+        direction = "UP";
     }
-    if (e.key == 'ArrowDown'){
-        run = 'running';
-        direction = 'DOWN';
+    if (e.key == "ArrowDown") {
+        direction = "DOWN";
     }
 
-    if (e.key == 'ArrowLeft'){
-        run = 'running';
-        direction = 'LEFT';
+    if (e.key == "ArrowLeft") {
+        direction = "LEFT";
     }
 
-    if (e.key == 'ArrowRight'){
-        run = 'running';
-        direction = 'RIGHT';
+    if (e.key == "ArrowRight") {
+        direction = "RIGHT";
     }
     if (gamOverModal == true) {
         if (e.key == " ") {
@@ -41,14 +37,12 @@ document.getElementById("close-gameover-modal").addEventListener("click", () => 
     initGame();
 });
 
-function hideGameOverModal(){
+function hideGameOverModal() {
     document.getElementById("game-over").style.display = "none";
     gamOverModal = null;
 }
 
 function showGameOverModal() {
-     document.getElementById("game-over").style.display = "block";
-     gamOverModal = true;
-} 
-
- 
+    document.getElementById("game-over").style.display = "block";
+    gamOverModal = true;
+}
