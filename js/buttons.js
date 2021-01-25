@@ -23,11 +23,9 @@ document.onkeydown = function (e) {
     if (e.key == "ArrowRight") {
         direction = "RIGHT";
     }
-    if (gamOverModal == true) {
-        if (e.key == " ") {
-            hideGameOverModal();
-            initGame();
-        }
+    if (gamOverModal == true && e.key == " ") {
+        hideGameOverModal();
+        initGame();
     }
 };
 
